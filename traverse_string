@@ -1,0 +1,6 @@
+from re import A
+
+
+a = "jaskaran"
+for i in range(len(a)):
+    print(a[i])
