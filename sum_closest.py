@@ -9,7 +9,6 @@ q = int(input("enter the target "))
 for i in a:
     for j in a:
         for k in a:
-           b.append(i+j+k)
-for i in range(0, len(b)):
-    if b[i] - q is min 
-
+            if i!=j and j != k and k!= i:
+                b.append(abs(q -(i+j+k)))
+print(min(b)+ q) 
