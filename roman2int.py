@@ -1,4 +1,4 @@
-s = 'XXIX'
+s = 'XIX'
 I = 1
 V = 5
 X = 10
@@ -31,15 +31,14 @@ for i in s:
     elif i == 'M':
         a.append( M)
         count += 1
-print(a)
 i = len(s)-1
-while(i != 0):
-    print(a[i])
-    if a[i] <= a[i-1] :
-        sum = sum+a[i] + a[i-1]
-        i = i-2
-    else:
-        sum = sum+a[i] - a[i-1]
-        i = i-2 
-sum = sum + a[i]
+sum = a[i]
+i-=1
+while(i != -1):
+    if a[i] < a[i+1] :
+        sum = sum-a[i]
+        i = i-1
+    elif a[i] >= a[i+1]:
+        sum = sum+a[i]
+        i = i-1
 print(sum)
